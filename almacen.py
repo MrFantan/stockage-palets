@@ -1,4 +1,11 @@
-import pandas as pd
+import openpyxl
+from openpyxl import Workbook
+
+try:
+        workbook = openpyxl.load_workbook('almacen.xlsx')
+        sheet = workbook.active
+        workbook.search(referencia[referencia])
+
 
 def ingresar_datos():
     referencia = input("Código de referencia: ")
@@ -12,18 +19,33 @@ def ingresar_datos():
     altura = input("En que altura esta ubicado: ")
     trabajador = input("Cúal es su nombre: ")
 
-    
-    datos = {"Referencia": referencia , "Cliente": cliente, "Unidades": unidades, "Embalajes": embalajes, "Cantidad Total": cantidad_total, "Palets": palets, "calle": calle, "Base": base, "Altura": altura, "Trabajador": trabajador,}
-    
-    try:
-        df = pd.read_excel('almacen.xlsx')
-        df = df.append(datos, ignore_index=True)
-    except:
-        df = pd.DataFrame(datos, index=[0])
+    datos = {
+        "Referencia": referencia,
+        "Cliente": cliente,
+        "Unidades": unidades,
+        "Embalajes": embalajes,
+        "Cantidad Total": cantidad_total,
+        "Palets": palets,
+        "Calle": calle,
+        "Base": base,
+        "Altura": altura,
+        "Trabajador": trabajador,
+    }
 
-        df.to_excel('almacen.xlsx', index=False)
-        print("Se ha agregado al cliente", cliente, "con la referencia número:", referencia, "un total de", unidades, "unidades por embalaje, distribuidas en", embalajes, "cajas, con un total de", cantidad_total, "unidades. Todo ha sido colocado en", palets, "palets. Ubicado en Calle", calle, "en la sección con base", base, "y altura", altura, "por el trabajador:", trabajador+".")
-        print("Producto almacenado exitosamente.")
+    try:
+        workbook = openpyxl.load_workbook('almacen.xlsx')
+        sheet = workbook.active
+    except FileNotFoundError:
+        workbook = Workbook()
+        sheet = workbook.active
+        sheet.append(["Referencia", "Cliente", "Unidades", "Embalajes", "Cantidad Total", "Palets", "Calle", "Base", "Altura", "Trabajador"])
+
+    values = list(datos.values())
+    sheet.append(values)
+
+    workbook.save('almacen.xlsx')
+    print(f"Se ha agregado al cliente {cliente} con la referencia número: {referencia}, un total de {unidades} unidades por embalaje, distribuidas en {embalajes} cajas, con un total de {cantidad_total} unidades. Todo ha sido colocado en {palets} palets. Ubicado en Calle {calle} en la sección con base {base} y altura {altura} por el trabajador: {trabajador}.")
+    print("Producto almacenado exitosamente.")
 
 while True:
     ingresar_datos()
