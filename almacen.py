@@ -15,10 +15,6 @@ def ingresar_datos():
     
     datos = {"Referencia": referencia , "Cliente": cliente, "Unidades": unidades, "Embalajes": embalajes, "Cantidad Total": cantidad_total, "Palets": palets, "calle": calle, "Base": base, "Altura": altura, "Trabajador": trabajador,}
     
-    if palets != 2:
-        print ( "son dos")
-
-
     try:
         df = pd.read_excel('almacen.xlsx')
         df = df.append(datos, ignore_index=True)
