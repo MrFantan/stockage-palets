@@ -28,7 +28,7 @@ def ingresar_datos():
     }
 
     try:
-        workbook = openpyxl.load_workbook('almacen.xlsx')
+        workbook = openpyxl.load_workbook('./Datos/almacen.xlsx')
         sheet = workbook.active
     except FileNotFoundError:
         workbook = Workbook()
@@ -38,7 +38,7 @@ def ingresar_datos():
     values = list(datos.values())
     sheet.append(values)
 
-    workbook.save('almacen.xlsx')
+    workbook.save('./Datos/almacen.xlsx')
     print(f"Se ha agregado al cliente {cliente} con la referencia número: {referencia}, un total de {unidades} unidades por embalaje, distribuidas en {embalajes} cajas, con un total de {cantidad_total} unidades. Todo ha sido colocado en {palets} palets. Ubicado en Calle {calle} en la sección con base {base} y altura {altura} por el trabajador: {trabajador}.")
     print("Producto almacenado exitosamente.")
 
