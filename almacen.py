@@ -1,11 +1,6 @@
 import openpyxl
 from openpyxl import Workbook
-
-try:
-        workbook = openpyxl.load_workbook('almacen.xlsx')
-        sheet = workbook.active
-        workbook.search(referencia[referencia])
-
+import pandas as pd
 
 def ingresar_datos():
     referencia = input("Código de referencia: ")
@@ -14,9 +9,9 @@ def ingresar_datos():
     embalajes = input("Cantidad de cajas en el palet: ")
     cantidad_total = input("Cantidad total por palet: ")
     palets = input("Cantidad de palets: ")
-    calle = input("En que calle esta ubicado: ")
-    base = input("En que base esta ubicado: ")
-    altura = input("En que altura esta ubicado: ")
+    calle = input("En que calle esta ubicado A-F: ")
+    base = input("En que base esta ubicado 1-33: ")
+    altura = input("En que altura esta ubicado 0-8: ")
     trabajador = input("Cúal es su nombre: ")
 
     datos = {
