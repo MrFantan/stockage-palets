@@ -16,15 +16,15 @@ def ingresar_datos():
 
     datos = {
         "Referencia": referencia,
-        "Cliente": cliente,
-        "Unidades": unidades,
+        "Cliente": cliente.upper(),
+        "Unidades": unidades, 
         "Embalajes": embalajes,
         "Cantidad Total": cantidad_total,
         "Palets": palets,
-        "Calle": calle,
+        "Calle": calle.upper(),
         "Base": base,
         "Altura": altura,
-        "Trabajador": trabajador,
+        "Trabajador": trabajador. title(),
     }
 
     try:
