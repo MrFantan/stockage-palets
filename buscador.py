@@ -7,8 +7,10 @@ respuesta = input("quieres buscar o ingresar? (B/I):  ")
 buscar = "b"
 ingresar = "i"
 
-if respuesta != ingresar:
-    print(df)
-else:
-    respuesta != buscar
+if respuesta == ingresar:
     from almacen import ingresar_datos
+    print("Datos insertados correctamente")
+else:
+    buscar = input("Que referencia busca: ")
+    print(df[df['Referencia'] == buscar])
+
