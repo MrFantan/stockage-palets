@@ -6,18 +6,18 @@ El almacén está organizado en secciones principales, cada sección tiene un no
 
 <b>Ingresar datos de Palet </b><p>
 Cada palet sera insertado en la base con unos datos solicitados al personal de almacén:<p>
-Referencia<p>
-Nombre del cliente<p>
-Cantidad de unidades por embalaje<p>
-Cantidad de embalajes por palet<p>
-Cantidad total del palet<p>
-Número de palets<p>
-Calle ubicado<p>
-Base<p>
-Altura de la ubicacion<p>
-Persona que inserta el dato<p>
-Dia<p>
-Hora<p> 
+·Referencia<p>
+·Nombre del cliente<p>
+·Cantidad de unidades por embalaje<p>
+·Cantidad de embalajes por palet<p>
+·Cantidad total del palet<p>
+·Número de palets<p>
+·Calle ubicado<p>
+·Base<p>
+·Altura de la ubicacion<p>
+·Persona que inserta el dato<p>
+·Dia<p>
+·Hora<p> 
 <p>
 
 <b>Identificación de Palets</b> ( En proceso )<p>
