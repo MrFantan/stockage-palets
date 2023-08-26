@@ -11,7 +11,7 @@ cliente = "c"
 if respuesta == ingresar:
     from almacen import ingresar_datos
     print("Datos insertados correctamente")
-if respuesta == cliente:
+elif respuesta == cliente:
     buscar = input("Que cliente busca: ")
     print(df[df['Cliente'] == buscar])
 else:
