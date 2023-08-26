@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 
 def ingresar_datos():
-    referencia = input("Código de referencia: F")
+    referencia = input("Código de reférencia: F")
     cliente = input("Nombre cliente: ")
     unidades = input("Unidades por embalaje: ")
     embalajes = input("Cantidad de cajas en el palet: ")
@@ -45,7 +45,7 @@ def ingresar_datos():
     sheet.append(values)
 
     workbook.save('./Datos/almacen.xlsx')
-    print(f"Se ha agregado al cliente {cliente} con la referencia número: F{referencia}, un total de {unidades} unidades por embalaje, distribuidas en {embalajes} cajas, con un total de {cantidad_total} unidades. Todo ha sido colocado en {palets} palets. Ubicado en Calle {calle} en la sección con base {base} y altura {altura} por el trabajador: {trabajador}, el día {dia} a las {hora}.")
+    print(f"Se ha agregado al cliente {cliente} con la reférencia número: F{referencia}, un total de {unidades} unidades por embalaje, distribuidas en {embalajes} cajas, con un total de {cantidad_total} unidades. Todo ha sido colocado en {palets} palets. Ubicado en Calle {calle} en la sección con base {base} y altura {altura} por el trabajador: {trabajador}, el día {dia} a las {hora}.")
     print("Producto almacenado exitosamente.")
 
 while True:
