@@ -22,8 +22,3 @@ Cada palet sera insertado en la base con unos datos solicitados al personal de a
 
 <b>Identificación de Palets</b> ( En proceso )<p>
 Cada palet dentro del almacén está etiquetado con un código QR Unico. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicacion del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
-
-<b>Reglas de Mantenimiento</b><p>
-Para mantener una organización efectiva en el almacén, se deben seguir las siguientes reglas:
-Registrar cada movimiento de palet en el sistema de gestión de inventario ( entrada, salida o modificación de ubicación).
-Colocar los palets de forma ordenada y en su ubicación designada después de cada uso.
