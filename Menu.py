@@ -1,44 +1,55 @@
 import pandas as pd
 
+# Cargar el archivo de datos
 df = pd.read_excel("./Datos/almacen.xlsx")
 
-menu = input("Menú Principal: \n"
-                  "1.- Ingresar datos \n" 
-                  "2.- Buscar por cliente \n" 
-                  "3.- Buscar por reférencia \n" 
-                  "4.- Eliminar reférencia \n"
-                  "5.- Ver todo \n" 
-                  "0.- Salir \n"
-                  "Seleccione una opción: "
-                  )
-ingresar = "1"
-buscar_cliente = "2"
-buscar_referecia = "3"
-eliminar = "4"
-todo = "5"
-salir = "0"
+
+# Definiciones para las opciones del menú
+
+opcion_ingresar = "I"
+opcion_buscar_cliente = "C"
+opcion_buscar_referencia = "R"
+opcion_eliminar = "E"
+opcion_ver_todo = "V"
+opcion_salir = "S"
 
 
-if menu == ingresar:
+
+menu = input(
+        "================================== \n"
+        "ALMACEN \n"
+        "================================== \n"
+        "[I]ngresar datos \n" 
+        "[C]liente a buscar \n" 
+        "[R]eférencia a buscar \n" 
+        "[E]liminar reférencia \n"
+        "[V]er todo \n" 
+        "[S]alir \n"
+        "================================== \n" 
+        "Seleccione una opción: "
+        ).upper()
+
+
+if menu == opcion_ingresar:
     from Almacen import ingresar_datos
     print("Datos insertados correctamente")
-elif menu == buscar_cliente:
+elif menu == opcion_buscar_cliente.upper():
     buscar = input("Que cliente busca: ")
     print(df[df['Cliente'] == buscar.upper()])
-elif menu == buscar_referecia:
+elif menu == opcion_buscar_referencia.upper():
     buscar = input("Que Referencia busca: ")
     print(df[df['Referencia'] == buscar.upper()])
-elif menu == eliminar:
+elif menu == opcion_eliminar:
     eliminar = input("Ingrese la referencia a eliminar: ")
     referencia_a_eliminar = df[df['Referencia'].str.upper() == eliminar.upper()].index
     df = df.drop(referencia_a_eliminar)
     print(print(f"Se ha eliminado la reférencia {eliminar} de la base de datos."))
     df.to_excel("./Datos/almacen.xlsx", index=False) 
-elif menu == buscar_referecia:
+elif menu == opcion_buscar_referencia.upper():
     buscar = input("Que reférencia busca: ")
     print(df[df['Referencia'] == buscar.upper()])    
-elif menu == todo:
+elif menu == opcion_ver_todo:
     print(df)
 else:
-    respuesta = salir
+    respuesta = opcion_salir
     print("Gracias por su consulta, espero verle pronto.")
