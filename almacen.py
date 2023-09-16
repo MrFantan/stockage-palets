@@ -14,10 +14,12 @@ def ingresar_datos():
     base = input("En que base esta ubicado 1-33: ")
     altura = input("En que altura esta ubicado 0-8: ")
     trabajador = input("Cúal es su nombre: ")
-    dia = datetime.today().strftime("%d/%m/%y")
-    hora = datetime.today().strftime("%H:%M")
 
-
+    # Formatear fecha y hora
+    ahora = datetime.today()
+    dia = ahora.strftime("%d/%m/%y")
+    hora = ahora.strftime("%H:%M")
+    
     datos = {
         "Referencia": "F"+referencia,
         "Cliente": cliente.upper(),
@@ -28,13 +30,13 @@ def ingresar_datos():
         "Calle": calle.upper(),
         "Base": base,
         "Altura": altura,
-        "Trabajador": trabajador. title(),
+        "Trabajador": trabajador.title(),
         "Fecha": dia,
         "Hora": hora,
     }
 
     try:
-        workbook = openpyxl.load_workbook('./Datos/almacen.xlsx')
+        workbook = openpyxl.load_workbook('./Datos/Almacen.xlsx')
         sheet = workbook.active
     except FileNotFoundError:
         workbook = Workbook()
@@ -44,7 +46,7 @@ def ingresar_datos():
     values = list(datos.values())
     sheet.append(values)
 
-    workbook.save('./Datos/almacen.xlsx')
+    workbook.save('./Datos/Almacen.xlsx')
     print(f"Se ha agregado al cliente {cliente} con la reférencia número: F{referencia}, un total de {unidades} unidades por embalaje, distribuidas en {embalajes} cajas, con un total de {cantidad_total} unidades. Todo ha sido colocado en {palets} palets. Ubicado en Calle {calle} en la sección con base {base} y altura {altura} por el trabajador: {trabajador}, el día {dia} a las {hora}.")
     print("Producto almacenado exitosamente.")
 
