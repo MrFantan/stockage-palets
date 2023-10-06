@@ -19,7 +19,7 @@ menu = input(
         "================================== \n"
         "ALMACEN \n"
         "================================== \n"
-        "[I]ngresar datos \n" 
+        "[I]ngresar datos \n"
         "[C]liente a buscar \n" 
         "[R]eférencia a buscar \n" 
         "[E]liminar reférencia \n"
@@ -31,7 +31,7 @@ menu = input(
 
 
 if menu == opcion_ingresar:
-    from Almacen import ingresar_datos
+    from almacen import ingresar_datos
     print("Datos insertados correctamente")
 elif menu == opcion_buscar_cliente.upper():
     buscar = input("Que cliente busca: ")
