@@ -27,7 +27,7 @@ Cada palet será insertado en la base con unos datos solicitados al personal de 
 [E]liminar referencia<p>
 [Q]R para crear<p>
 [B]orrar Índice<p>
-[V]er todo<p>S
+[V]er todos<p>
 [S]alir<p>
 <p>
 
