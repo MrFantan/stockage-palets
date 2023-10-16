@@ -1,10 +1,10 @@
-<b>#Descripción de Ubicación de Palets en Almacén</b><p>
+<b><H1>Descripción de Ubicación de Palets en Almacén<H1></b><p>
 Este documento proporciona una visión general de cómo están organizados y ubicados los palets dentro de nuestro almacén.
 
-<b>##Organización General</b><p>
+<b><h2>Organización General<h2></b><p>
 El almacén está organizado en secciones principales, cada sección tiene un nombre identificativo y se encuentra claramente señalizada en la entrada del almacén para facilitar la navegación.
 
-<b>##Ingresar datos de Palet </b><p>
+<b><h2>Ingresar datos de Palet<h2></b><p>
 Cada palet será insertado en la base con unos datos solicitados al personal de almacén:<p>
 · Referencia<p>
 · Nombre del cliente<p>
@@ -20,7 +20,7 @@ Cada palet será insertado en la base con unos datos solicitados al personal de 
 · Hora<p> 
 <p>
 
-<b>#Menú de opciones disponibles</b><p>
+<b><h1>Menú de opciones disponibles<h1></b><p>
 [I]ngresar datos<p>
 [C]liente a buscar<p>
 [R]eferencia a buscar<p>
@@ -31,7 +31,7 @@ Cada palet será insertado en la base con unos datos solicitados al personal de 
 [S]alir<p>
 <p>
 
-<b>##Generador de código QR<b>
+<b><h2>Generador de código QR<h2><b>
 Si deseas podrás realizar un código QR con la referencia indicada ( su nombre de archivo será: codigo_qr_referencia) el cual adherir al palet para tenerlo identificado para después poder ubicarlo en la zona ingresada en el almacén, cada código es diferente, se necesitaría una app para poder leerlos.
 
 ![QR CODE EJEMPLO](./Datos/QR/codigo_qr_F0001.png)
@@ -41,5 +41,5 @@ QRbot: escáner QR<p>
 Link Google Play: https://play.google.com/store/apps/details?id=net.qrbot&pcampaignid=web_share<p>
 Link Apple: https://itunes.apple.com/app/qr-code-barcode-scanner/id1048473097
 
-<b>##Identificación de Palets</b><p>
+<b><h2>Identificación de Palets<h2></b><p>
 Cada palet dentro del almacén está etiquetado con un código QR Único. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicación del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
