@@ -20,21 +20,21 @@ Cada palet será insertado en la base con unos datos solicitados al personal de 
 · Hora<p> 
 <p>
 
-<b>Menú de opciones disponibles</b>
-[I]ngresar datos
-[C]liente a buscar
-[R]eferencia a buscar
-[E]liminar referencia
-[Q]R para crear
-[B]orrar Índice
-[V]er todo
-[S]alir
+<b>Menú de opciones disponibles</b><p>
+[I]ngresar datos<p>
+[C]liente a buscar<p>
+[R]eferencia a buscar<p>
+[E]liminar referencia<p>
+[Q]R para crear<p>
+[B]orrar Índice<p>
+[V]er todo<p>
+[S]alir<p>
 <p>
 
 <b>Generador de código QR<b>
 Si deseas podrás realizar un código QR con la referencia indicada ( su nombre de archivo será: codigo_qr_referencia) el cual adherir al palet para tenerlo identificado para después poder ubicarlo en la zona ingresada en el almacén, cada código es diferente, se necesitaría una app para poder leerlos.
 
-
+<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://github.com/MrFantan/stockage-palets/blob/main/Datos/QR/codigo_qr_F0001.png</span><span>)</span>
 
 <b>Identificación de Palets</b><p>
 Cada palet dentro del almacén está etiquetado con un código QR Único. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicación del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
