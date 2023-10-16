@@ -5,7 +5,7 @@ Este documento proporciona una visión general de cómo están organizados y ubi
 El almacén está organizado en secciones principales, cada sección tiene un nombre identificativo y se encuentra claramente señalizada en la entrada del almacén para facilitar la navegación.
 
 <b>Ingresar datos de Palet </b><p>
-Cada palet sera insertado en la base con unos datos solicitados al personal de almacén:<p>
+Cada palet será insertado en la base con unos datos solicitados al personal de almacén:<p>
 · Referencia<p>
 · Nombre del cliente<p>
 · Cantidad de unidades por embalaje<p>
@@ -14,11 +14,27 @@ Cada palet sera insertado en la base con unos datos solicitados al personal de a
 · Número de palets<p>
 · Calle ubicado<p>
 · Base<p>
-· Altura de la ubicacion<p>
-· Persona que inserta el datos<p>
-· Dia<p>
+· Altura de la ubicación<p>
+· Persona que inserta el dato<p>
+· Día<p>
 · Hora<p> 
 <p>
 
-<b>Identificación de Palets</b> ( En proceso )<p>
-Cada palet dentro del almacén está etiquetado con un código QR Unico. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicacion del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
+<b>Menú de opciones disponibles</b>
+[I]ngresar datos
+[C]liente a buscar
+[R]eferencia a buscar
+[E]liminar referencia
+[Q]R para crear
+[B]orrar Índice
+[V]er todo
+[S]alir
+<p>
+
+<b>Generador de código QR<b>
+Si deseas podrás realizar un código QR con la referencia indicada ( su nombre de archivo será: codigo_qr_referencia) el cual adherir al palet para tenerlo identificado para después poder ubicarlo en la zona ingresada en el almacén, cada código es diferente, se necesitaría una app para poder leerlos.
+
+
+
+<b>Identificación de Palets</b><p>
+Cada palet dentro del almacén está etiquetado con un código QR Único. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicación del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
