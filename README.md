@@ -1,4 +1,4 @@
-<b><H1>Descripción de Ubicación de Palets en Almacén<H1></b><p>
+<b><H1>Descripción de Ubicación de Palets en Almacén</b><p>
 Este documento proporciona una visión general de cómo están organizados y ubicados los palets dentro de nuestro almacén.
 
 <b><h2>Organización General<h2></b><p>
