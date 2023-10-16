@@ -27,7 +27,7 @@ Cada palet será insertado en la base con unos datos solicitados al personal de 
 [E]liminar referencia<p>
 [Q]R para crear<p>
 [B]orrar Índice<p>
-[V]er todo<p>
+[V]er todo<p>S
 [S]alir<p>
 <p>
 
@@ -35,6 +35,11 @@ Cada palet será insertado en la base con unos datos solicitados al personal de 
 Si deseas podrás realizar un código QR con la referencia indicada ( su nombre de archivo será: codigo_qr_referencia) el cual adherir al palet para tenerlo identificado para después poder ubicarlo en la zona ingresada en el almacén, cada código es diferente, se necesitaría una app para poder leerlos.
 
 ![QR CODE EJEMPLO](./Datos/QR/codigo_qr_F0001.png)
+
+
+QRbot: escáner QR
+Link Google Play: https://play.google.com/store/apps/details?id=net.qrbot&pcampaignid=web_share
+Link Apple: https://itunes.apple.com/app/qr-code-barcode-scanner/id1048473097
 
 <b>Identificación de Palets</b><p>
 Cada palet dentro del almacén está etiquetado con un código QR Único. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicación del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
