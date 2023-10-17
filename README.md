@@ -31,7 +31,7 @@ Cada palet será insertado en la base con unos datos solicitados al personal de 
 [S]alir<p>
 <p>
 
-<b>Generador de código QR<b>
+<b>Generador de código QR</b><p>
 Si deseas podrás realizar un código QR con la referencia indicada ( su nombre de archivo será: codigo_qr_referencia) el cual adherir al palet para tenerlo identificado para después poder ubicarlo en la zona ingresada en el almacén, cada código es diferente, se necesitaría una app para poder leerlos.
 
 ![QR CODE EJEMPLO](./Datos/QR/codigo_qr_F0001.png)
