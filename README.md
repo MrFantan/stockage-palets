@@ -39,7 +39,7 @@ Si deseas podrás realizar un código QR con la referencia indicada ( su nombre 
 
 QRbot: escáner QR<p>
 Link Google Play: https://play.google.com/store/apps/details?id=net.qrbot&pcampaignid=web_share<p>
-Link Apple: https://itunes.apple.com/app/qr-code-barcode-scanner/id1048473097
+Link Apple Store: https://itunes.apple.com/app/qr-code-barcode-scanner/id1048473097
 
 <b>Identificación de Palets</b><p>
 Cada palet dentro del almacén está etiquetado con un código QR Único. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicación del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
