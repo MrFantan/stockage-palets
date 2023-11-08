@@ -43,3 +43,9 @@ Link Apple Store: https://itunes.apple.com/app/qr-code-barcode-scanner/id1048473
 
 <b>Identificación de Palets</b><p>
 Cada palet dentro del almacén está etiquetado con un código QR Único. Esta etiqueta contiene información relevante sobre el contenido del palet, como nombre del cliente, como la cantidad de embalajes, número de unidades por caja, ubicación del palet y persona que inserta el dato al sistema. Además, se registra esta información en un sistema de gestión de inventario para un seguimiento más detallado.
+
+<b>Librerias necesarias.</b><p>
+
+Pandas<p>
+Openpyxl<p>
+Qrcode<p>
